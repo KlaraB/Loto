@@ -4,11 +4,11 @@ from random import randint
 
 odgovor = int(raw_input("Koliko stevil zelis? "))
 
-def loterija():
+def loterija(kolicina):
     loto = []
-    for nakljucno_stevilo in range (0, odgovor):
+    for nakljucno_stevilo in range (0, kolicina):
         nakljucno_stevilo = randint(0,9)
         loto.append(nakljucno_stevilo)
     print(loto)
 
-loterija()
+loterija(odgovor)
